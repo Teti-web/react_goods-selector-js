@@ -40,7 +40,6 @@ export const App = () => {
         <tbody>
           {goods.map(good => {
             const isSelected = selectedGood === good;
-            const showAddButton = !selectedGood;
 
             return (
               <tr
@@ -60,7 +59,7 @@ export const App = () => {
                     </button>
                   )}
 
-                  {!isSelected && showAddButton && (
+                  {!isSelected  && (
                     <button
                       data-cy="AddButton"
                       type="button"
